@@ -63,11 +63,21 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+    I will first check the console and network when i submit the form to add a new toy.
+    it is an internal server error,something wrong with rails API.
+    I see a Name error in the toys controller,i fix it.
+    it has worked!
+    
 
 - Update the number of likes for a toy
 
   - How I debugged:
+    Will first click like button and see what error shows.
+    it says syntax error unexpected end of input JSON,meaning ,maybe,what is being parsed as the response in my controller is not valid json,or there is an issue with parsing to json with react app.
+  issue with controller,i fix it
+
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+  - 404 error:wasnt included in routes resources so i updated that
